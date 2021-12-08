@@ -874,7 +874,7 @@ body {
 
 }
 
-@media (min-width: 400px) and (max-width: 900px) {
+@media (min-width: 450px) and (max-width: 900px) {
 	.showcase, .showcase header {
 		padding: 30px;
 	}
@@ -1045,7 +1045,7 @@ body {
 }
 
 
-@media (min-width: 0px) and (max-width: 399px) {
+@media (min-width: 0px) and (max-width: 449px) {
 	.showcase, .showcase header {
 		padding: 30px;
 	}
