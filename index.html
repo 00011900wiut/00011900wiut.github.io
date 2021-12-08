@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main/style.css">
+	<title>KK Academy</title>
+</head>
+<body>
+	<div class="loader">
+        <img src="main/images/loading.gif" alt="Loading..." />
+    </div>
+	<section class="showcase">
+		<header>
+			<h2 class="logo" id="kkAcademy"><a href="index.html">KK Academy</a></h2>
+			<a class="sign_in" href="#">Sign in</a>
+			<p class="join_us"><a href="#" class="join">Join Us</a></p>
+			<div class="modal" id="modal">
+				<div class="modal-header">
+					<h2 class="login" style="color: black;">Log In</h2>
+					<button class="close">&times;</button>
+				</div>
+				<div class="modal-body">
+					<form action="" class="login_form">
+						<p>Email</p>
+						<input type="Email">
+						<p>Username</p>
+						<input type="text">
+						<p>Password</p>
+						<p id="word_count">password should have at least 8 charachters</p>
+						<input type="text" id="passwordInput">
+					</form>
+				</div>
+			</div>
+			<div class="modal2">
+				<div class="modal-header">
+					<h2 class="login" style="color: black;">Sign In</h2>
+					<button class="close2">&times;</button>
+				</div>
+				<div class="modal-body">
+					<form action="" class="login_form">
+						<p>Username</p>
+						<input type="text">
+						<p>Password</p>
+						<p id="word_count_signIn">password should have at least 8 characters</p>
+						<input type="text" id="passwordInputSignIn">
+					</form>
+				</div>
+			</div>
+			<div class="toggle"></div>
+		</header>
+		<video src="main/images/background.mp4" muted loop autoplay></video>
+
+		<div class="overlay"></div>
+
+		<div class="text">
+			<h2>Never Stop Learning</h2>
+			<h3>Because life never stops teaching</h3>
+			<p>Life is growth. If we stop growing, technically and spiritually, <br>we are as good as dead.</p>
+			<p>Morihei Ueshiba</p>
+			<a href="explore/explore.html">Explore</a>
+		</div>
+		<a href="#" id="goUp"><img src="main/images/go-up.png" width="80px"></a>
+	</section>
+	<div class="menu">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#specials">Specials</a></li>
+			<li><a href="#populars">Populars</a></li>
+			<li><a href="#about">About us</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>
+	<section id="specials">
+		<div class="specials_main">
+			<div class="container">
+				<div class="specials_header">
+					<h2>Specials</h2>
+					<p>Stop scrolling. Start growing.</p>
+				</div>
+			</div>
+			<div class="specials_body">	
+				<div class="specials_first_row">	
+					<div class="first_row_course1">
+						<a href=""><img src="main/images/course1.png" alt=""></a>
+						<h5>Productivity for Creatives: Build a System That Brings Out Your Best</h5>
+						<p>Thomas Frank</p>
+					</div>
+					<div class="first_row_course2">
+						<a href=""><img src="main/images/course2.png" alt=""></a>
+						<h5>Simple Productivity: How to Accomplish More With Less</h5>
+						<p>Greg McKeown</p>
+					</div>
+					<div class="first_row_course3">
+						<a href=""><img src="main/images/course3.png" alt=""></a>
+						<h5>Writing for Self-Discovery: 6 Journaling Prompts for Gratitude and Growth</h5>
+						<p>Yasmine Cheyenne</p>
+					</div>
+				</div>
+
+				<div class="specials_second_row">	
+					<div class="second_row_course4">
+						<a href=""><img src="main/images/course4.png" alt=""></a>
+						<h5>Do Things, Tell People: The Power of Personal Branding</h5>
+						<p>Hamza Khan</p>	
+					</div>
+					<div class="second_row_course5">
+						<a href=""><img src="main/images/course5.png" alt=""></a>
+						<h5>30-Days to SOAR</h5>
+						<p>LaKisha Nevels</p>
+					</div>
+					<div class="second_row_course6">
+						<a href=""><img src="main/images/course6.png" alt=""></a>
+						<h5>Make Creativity Your Career: Six Exercises to Create a Successful Side Project</h5>
+						<p>Andy J. Pizza</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<section id="populars">
+		<div class="populars_main">
+			
+			<div class="populars_header">
+				<h2>Populars</h2>
+				<p>Kick off your new skillset with these free courses.</p>
+			</div>
+
+			<div class="populars_body">
+				<img name="sliding" width="800px" height = "450px" class="populars_body_img">
+				<div class="populars_body_text">
+					<h5 id="h5">How to Learn: Strategies for Starting, Practicing & Mastering the Skills You’ve Always Wanted</h5>
+					<p id="p">Mike Boyd</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="newCourses">
+		<h2>New Courses</h2>
+		<p>Do not practice until you get it right, practice until you cannot get it wrong</p>
+	</div>
+	<section id="#new" style="display: flex; flex-wrap: wrap; justify-content: center;">
+
+		<div class="card">
+			<div class="imgBox">
+				<img src="main/images/course1.png">
+			</div>
+			<div class="content">
+				<h2>Productivity for Creatives: Build a System That Brings Out Your Best</h2>
+				<p>Thomas Frank</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgBox">
+				<img src="main/images/course1.png">
+			</div>
+			<div class="content">
+				<h2>Productivity for Creatives: Build a System That Brings Out Your Best</h2>
+				<p>Thomas Frank</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgBox">
+				<img src="main/images/course1.png">
+			</div>
+			<div class="content">
+				<h2>Productivity for Creatives: Build a System That Brings Out Your Best</h2>
+				<p>Thomas Frank</p>
+			</div>
+		</div>
+	</section>
+	<section id="about">
+		<div class="about_main">
+			<div class="about_header">
+				<h2>Why learners Love Us</h2>
+			</div>
+			<div class="about_body">
+				<button id="btn_left">&lt;</button>
+				<div class="first_content">
+					<img src="main/images/quotes.png">
+					<p id="contentAnswer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<h5 id="contentWriter">Anthony Walker</h5>
+				</div>
+				<div class="second_content">	
+					<img src="main/images/quotes.png">
+					<p id="contentAnswer2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<h5 id="contentWriter2">Anthony Walker</h5>
+				</div>
+				<button id="btn_right">&gt;</button>
+			</div>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="main_contact">
+			<div class="contact_info">
+				<h2>Contact Info</h2>
+				<ul class="info">
+					<li>
+						<span><img src="main/images/location.png" width="32px"></span>
+						<span>2912 Meadowbrook Road<br>Los Angles, CA<br>90017</span>
+					</li>
+					<li>
+						<span><img src="main/images/mail.png" width="32px"></span>
+						<span>lorem@ipsum.com</span>
+					</li>
+					<li>
+						<span><img src="main/images/call.png" width="32px"></span>
+						<span>310-386-1623</span>
+					</li>
+				</ul>
+				<ul class="sci">
+					<li><a href="#"><img src="main/images/facebook.png" alt="" width="32px"></a></li>
+					<li><a href="#"><img src="main/images/instagram.png" alt="" width="32px"></a></li>
+					<li><a href="#"><img src="main/images/twitter.png" alt="" width="32px"></a></li>
+					<li><a href="#"><img src="main/images/linkedin.png" alt="" width="32px"></a></li>
+				</ul>
+			</div>
+			<div class="contactForm">
+				<h2>Send a Message</h2>
+				<form id="form">
+					<div class="formBox">
+						<div class="inputBox w50">
+							<input type="text" id="firstName" required>
+							<span>First Name</span>
+						</div>
+						<div class="inputBox w50">
+							<input type="text" id="lastName" required>
+							<span>Last Name</span>
+						</div>
+						<div class="inputBox w50">
+							<input type="text" id="email_" required>
+							<span>E-mail</span>
+						</div>
+						<div class="inputBox w50">
+							<input type="text" id="mobileNumber" required>
+							<span>Mobile Number</span>
+						</div>
+						<div class="inputBox w100">
+							<input id="msg" required></input>
+							<span>Write your message here...</span>
+						</div>
+						<div class="inputBox w100">
+							<input type="submit" value="Send">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact_small">
+		<div class="contact_info_small">
+			<div>
+				<ul class="info2">
+					<li>
+						<h2 class="contact_info_h2">Contact Info</h2>
+						<img src="main/images/location.png" width="32px">
+						<p>2912 Meadowbrook Road<br>Los Angles, CA<br>90017</p>
+					</li>
+					<li>
+						<img src="main/images/mail.png" width="32px">
+						<p>lorem@ipsum.com</p>
+					</li>
+					<li>
+						<img src="main/images/call.png" width="32px">
+						<p>310-386-1623</p>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="sci_small">
+					<li><a href="#"><img src="main/images/facebook.png" alt="" width="32px"></a></li>
+					<li><a href="#"><img src="main/images/instagram.png" alt="" width="32px"></a></li>
+					<li><a href="#"><img src="main/images/twitter.png" alt="" width="32px"></a></li>
+					<li><a href="#"><img src="main/images/linkedin.png" alt="" width="32px"></a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<p>“This website was created to fulfill Web Technology module’s requirements and does not represent an actual company or service”</p>
+	<script src="main/main.js"></script>
+</body>
+</html>
