@@ -27,10 +27,11 @@ let form = document.getElementById('form');
 let goUp = document.getElementById('goUp');
 let kkAcademy = document.getElementById('kkAcademy');
 
+// region "about"
 var j = 0;
+//list with text and name of a user
 var answerList = ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "22Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "33Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "44Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."]
 var writerList = ["Anthony Walker", "2Anthony Walker", "3Anthony Walker", "4Anthony Walker"]
-
 btnRight.addEventListener('click', function(){
     if(j < answerList.length - 1){
             j++;
@@ -55,7 +56,7 @@ btnLeft.addEventListener('click', function(){
     contentWriter2.textContent = writerList[j];
 
 });
-
+//getting values from form and showing them in the about section
 form.addEventListener('submit', function(event){
     event.preventDefault();
     const itemMessage = {
@@ -71,7 +72,7 @@ form.addEventListener('submit', function(event){
     
 
 });
-
+//loop for slider
 var i=0;
     var images = ["main/images/course_populars.jpg", "main/images/course_populars2.jpg"];
     var h2s = ["How to Learn: Strategies for Starting, Practicing & Mastering the Skills You’ve Always Wanted", "Productivity for Creatives: Build a System That Brings Out Your Best"];
@@ -92,12 +93,13 @@ var i=0;
     }
     window.onload = img_slider;
 
-
+//showing and hiding menu toggle
 menuToggle.addEventListener("click", function(){
 	menuToggle.classList.toggle('active');
 	showcase.classList.toggle('active');
 });
 
+// login form
 joinButton.addEventListener('click', function(){
 	logInForm.classList.toggle('active');
 });
@@ -106,6 +108,7 @@ closeButton.addEventListener('click', function(){
 	logInForm.classList.toggle('active');
 });
 
+//sign in form
 signInButton.addEventListener('click', function(){
 	signInForm.classList.toggle('active');
 });
@@ -114,6 +117,7 @@ closeButton2.addEventListener('click', function(){
 	signInForm.classList.toggle('active');
 });
 
+//cheking if password has 8 characters
 passwordInput.addEventListener("input", function () {
     let num = passwordInput.value.trim().length;
     if (num >= 8){
@@ -132,6 +136,7 @@ passwordInputSignIn.addEventListener("input", function () {
     }
 });
 
+//loading animation
 window.addEventListener("load", function () {
     const loader = document.querySelector(".loader");
     loader.className += " hidden"; // class "loader hidden"
