@@ -26,6 +26,8 @@ let msg = document.getElementById('msg');
 let form = document.getElementById('form');
 let goUp = document.getElementById('goUp');
 let kkAcademy = document.getElementById('kkAcademy');
+let validation_text = document.getElementById('email_text');
+let email_email = document.getElementById('email_email');
 
 // region "about"
 var j = 0;
@@ -74,24 +76,24 @@ form.addEventListener('submit', function(event){
 });
 //loop for slider
 var i=0;
-    var images = ["main/images/course_populars.jpg", "main/images/course_populars2.jpg"];
-    var h2s = ["How to Learn: Strategies for Starting, Practicing & Mastering the Skills You’ve Always Wanted", "Productivity for Creatives: Build a System That Brings Out Your Best"];
-    var ps = ["Mike Boyd", "Thomas Frank"];
-    var time = 3000;
+var images = ["main/images/course_populars.jpg", "main/images/course_populars2.jpg"];
+var h2s = ["How to Learn: Strategies for Starting, Practicing & Mastering the Skills You’ve Always Wanted", "Productivity for Creatives: Build a System That Brings Out Your Best"];
+var ps = ["Mike Boyd", "Thomas Frank"];
+var time = 3000;
 
-    function img_slider(){
-        document.sliding.src = images[i];
-        h5.textContent = h2s[i];
-        p.textContent = ps[i];
-        if(i < images.length - 1){
-            i++;
-        } else {
-            i=0;
-        }
-
-        setTimeout("img_slider()", time);
+function img_slider(){
+    document.sliding.src = images[i];
+    h5.textContent = h2s[i];
+    p.textContent = ps[i];
+    if(i < images.length - 1){
+        i++;
+    } else {
+        i=0;
     }
-    window.onload = img_slider;
+
+    setTimeout("img_slider()", time);
+}
+window.onload = img_slider;
 
 //showing and hiding menu toggle
 menuToggle.addEventListener("click", function(){
@@ -141,3 +143,13 @@ window.addEventListener("load", function () {
     const loader = document.querySelector(".loader");
     loader.className += " hidden"; // class "loader hidden"
 });
+
+//email validation
+const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+function validation(){
+    if (email_email.value.match(pattern)){
+        validation_text.innerHTML = "Valid";
+    }else{
+        validation_text.innerHTML = "Invalid";
+    }
+};
